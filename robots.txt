@@ -1,0 +1,12 @@
+#Sitemap: http://www.example.com/sitemap.xml
+
+User-agent: *
+Disallow: /_fehler_seite_de.html
+Disallow: /_fehler_recht_de.html
+Disallow: /master_de.html
+Disallow: /_fehler_seite_en.html
+Disallow: /_fehler_recht_en.html
+Disallow: /master_en.html
+Disallow: /_fehler_seite_fr.html
+Disallow: /_fehler_recht_fr.html
+Disallow: /master_fr.html
