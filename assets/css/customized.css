@@ -1,0 +1,18 @@
+/* GENERAL */
+.white {
+  background-color: white;
+}
+
+/* NEWSLETTER SIGNUP */
+
+
+/* IMPRESSUM */
+.footer {
+  background-color: white;
+  text-align: center;
+  padding: 1em;
+}
+.footer > span {
+  color: black;
+  font-size: 0.8em;
+}
