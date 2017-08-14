@@ -67,9 +67,9 @@
     <div class="section-row pad-4">
       <div class="col-xs-12 col-md-6 col-md-offset-3">
         <div class="input-group input-group-lg">
-          <input type="text" class="form-control" placeholder="E-Mail Adresse">
+          <input type="email" class="form-control" placeholder="E-Mail Adresse" id="email">
           <span class="input-group-btn">
-            <button class="btn btn-default" type="button" id="submitEmail">Absenden</button>
+            <button class="btn btn-default" type="submit" id="submitEmail">Absenden</button>
           </span>
         </div><!-- /input-group -->
       </div><!-- /.col-lg-6 -->
@@ -89,10 +89,13 @@
   </div>
 
   <script src="portal/skripts/lib/jquery/jquery-1.11.3.min.js"></script>
+  <script src="assets/js/logging.js"></script>
   <script>
     $('#submitEmail').click( function () {
       $('.icon').addClass('drawn')
       $('.input-group').css('opacity', 0)
+
+      logAction('newsletterConversion', $('#email').val())
     })
   </script>
 
