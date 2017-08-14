@@ -60,8 +60,8 @@ define(['jquery', 'config', 'require', 'bootstrap', 'modernizr'], function ($j, 
 				var el = document.getElementById('bodymovin');
 
 				var isElementInViewport = function () {
-
-					var rect = document.getElementById('bodymovin').getBoundingClientRect();
+					if (document.getElementById('bodymovin')) {
+						var rect = document.getElementById('bodymovin').getBoundingClientRect();
 
 					var isVisible = (
 							rect.top >= 0 &&
@@ -71,6 +71,11 @@ define(['jquery', 'config', 'require', 'bootstrap', 'modernizr'], function ($j, 
 					);
 
 					return isVisible;
+					} else {
+						return false
+					}
+				}
+					
 				};
 
 				function onVisibilityChange(el, callback) {
