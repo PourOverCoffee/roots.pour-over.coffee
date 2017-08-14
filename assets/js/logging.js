@@ -4,10 +4,23 @@ if (!user_token) {
     localStorage.setItem('user_token', user_token)
 }
 
+function findGetParameter(parameterName) {
+    var result = null,
+        tmp = [];
+    location.search
+        .substr(1)
+        .split("&")
+        .forEach(function (item) {
+          tmp = item.split("=");
+          if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+        });
+    return result;
+}
+
 session_token = (Math.random() * Math.pow(2, 70)).toString(36)
 
-campaign = 'test_campaign'
-product = 'test_product'
+campaign = findGetParameter('utm_campaign') || 'no_campaign'
+product = findGetParameter('product')  || 'no_product'
 version = '1.0'
 server = 'https://pourover.ambroselli.tech'
 
