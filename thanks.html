@@ -57,21 +57,25 @@
 
   <div class="section">
     <div class="section-row">
-      <h1 class="header"> Danke für dein Interesse </h1>
+      <h1 class="header">Thanks for your interest!</h1>
     </div>
     <div class="section-row">
-      <h3 class="header"> Trage hier deine E-Mail Adresse ein und wir benachrichtigen dich, sobald das Produkt verfügbar ist.</h3>
+      <h3 class="header"><span>Please enter you email so we can give you an <strong>early adopter discount</strong> when the product becomes available.</span></h3>
     </div>
     <div class="section-row pad-4">
       <div class="col-xs-12 col-md-6 col-md-offset-3">
         <div class="input-group input-group-lg">
-          <input type="email" class="form-control" placeholder="E-Mail Adresse" id="email">
+          <input type="email" class="form-control" placeholder="Email address" id="email">
           <span class="input-group-btn">
-            <button class="btn btn-default" type="submit" id="submitEmail">Absenden</button>
+            <button class="btn btn-default" type="submit" id="submitEmail">Send</button>
           </span>
         </div><!-- /input-group -->
       </div><!-- /.col-lg-6 -->
     </div>
+<!--     <div class="section-row">
+      <h3 class="small-header"><span>We will never spam you and you can always unsubscribe. :)</span></h3>
+    </div> -->
+
     <div class="section-row">
         <div class="icon">
           <svg version="1.1" id="tick" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -81,6 +85,7 @@
             />
             <polyline class="tick path" style="fill:none;stroke:#000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:10;" points="
         11.6,20 15.9,24.2 26.4,13.8 " />
+
           </svg>
         </div>
     </div>
@@ -113,6 +118,12 @@
     &noscript=1"/>
     </noscript>
   <!-- End Facebook Pixel Code -->
+  <script>
+  // track to facebook that the thank you page was viewed
+  fbq('track', 'ViewContent');
+  </script>
+
+
   <script>
     $('#submitEmail').click( function () {
       $('.icon').addClass('drawn')

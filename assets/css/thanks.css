@@ -42,10 +42,18 @@ body {
   transform: translateX(-50%);
 }
 
-.header {
-  /* color: white; */
+.header span {
+  max-width: 780px;
+  line-height: 1.3em;
+  display: inline-block;
   font-family: sans-serif;
-} 
+}
+
+.small-header {
+  font-size: 1em;
+  display: block;
+  margin-top: 80px;
+}
 
 
 
