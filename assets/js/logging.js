@@ -51,7 +51,7 @@ function logAction(action, identifier) {
         },
         contentType: "application/json",
         data: JSON.stringify({
-            "action": action || 'default,
+            "action": action || 'default',
             "session_token": session_token,
             "identifier": identifier || 'default',
             "elapsed_time": "" + Math.floor(((new Date()) - start_time) / 1000)
