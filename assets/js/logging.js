@@ -37,7 +37,7 @@ function logSession() {
         console.log(data);
     })
     .fail(function(jqXHR, textStatus, errorThrown) {
-        console.log("HTTP Request Failed");
+        console.log("HTTP Request Failed", textStatus, errorThrown);
     })
 }
 
@@ -62,7 +62,7 @@ function logAction(action, identifier) {
         console.log(data);
     })
     .fail(function(jqXHR, textStatus, errorThrown) {
-        console.log("HTTP Request Failed");
+        console.log("HTTP Request Failed", textStatus, errorThrown);
     })
     .always(function() {
         /* ... */
