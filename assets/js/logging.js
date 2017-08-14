@@ -9,7 +9,7 @@ session_token = (Math.random() * Math.pow(2, 70)).toString(36)
 campaign = 'test_campaign'
 product = 'test_product'
 version = '1.0'
-server = 'http://localhost:3000'
+server = 'https://pourover.ambroselli.tech'
 
 start_time = new Date()
 
