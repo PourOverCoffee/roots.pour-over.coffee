@@ -71,12 +71,9 @@ h1.header {
   margin-top: 80px;
 }
 
-.forminput {
-  width: 400px;
-  margin-left: 50%;
-  transform: translateX(-50%);
+.coffeeicon {
+  margin-bottom: 40px;
 }
-
 
 /* Tick-Animation */
 .circ{
