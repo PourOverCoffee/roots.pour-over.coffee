@@ -67,3 +67,6 @@ function logAction(action, identifier) {
         /* ... */
     });
 }
+
+// always log the session on load
+logSession()
