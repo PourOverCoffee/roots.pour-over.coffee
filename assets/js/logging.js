@@ -51,6 +51,7 @@ function logAction(action, identifier) {
             "action": action || 'default',
             "session_token": session_token,
             "identifier": identifier || 'default',
+            "path": window.location.href,
             "elapsed_time": "" + Math.floor(((new Date()) - start_time) / 1000)
         })
 
