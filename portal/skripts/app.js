@@ -60,17 +60,7 @@ define(['jquery', 'config', 'require', 'bootstrap', 'modernizr'], function ($j, 
 				var el = document.getElementById('bodymovin');
 
 				var isElementInViewport = function () {
-
-					var rect = document.getElementById('bodymovin').getBoundingClientRect();
-
-					var isVisible = (
-							rect.top >= 0 &&
-							rect.left >= 0 &&
-							rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
-							rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
-					);
-
-					return isVisible;
+					return true;
 				};
 
 				function onVisibilityChange(el, callback) {
