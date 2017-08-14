@@ -28,6 +28,7 @@ function logSession() {
             "session_token": session_token,
             "product": product,
             "token": user_token,
+            "domain": window.location.protocol + '//' + window.location.hostname,
             "version": version
         })
     })
