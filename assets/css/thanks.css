@@ -1,6 +1,11 @@
 body {
   font-family: sans-serif;
   /* background-color: #333; */
+  background: -webkit-linear-gradient(280deg, rgb(87, 125, 161) 0%, rgb(169, 191, 208) 40%, rgb(249, 248, 232) 70%, rgb(253, 229, 208) 100%);
+  background: -o-linear-gradient(280deg, rgb(87, 125, 161) 0%, rgb(169, 191, 208) 40%, rgb(249, 248, 232) 70%, rgb(253, 229, 208) 100%);
+  background: -ms-linear-gradient(280deg, rgb(87, 125, 161) 0%, rgb(169, 191, 208) 40%, rgb(249, 248, 232) 70%, rgb(253, 229, 208) 100%);
+  background: -moz-linear-gradient(280deg, rgb(87, 125, 161) 0%, rgb(169, 191, 208) 40%, rgb(249, 248, 232) 70%, rgb(253, 229, 208) 100%);
+  background: linear-gradient(170deg, rgb(87, 125, 161) 0%, rgb(169, 191, 208) 40%, rgb(249, 248, 232) 70%, rgb(253, 229, 208) 100%);
 }
 
 .section {
@@ -42,8 +47,19 @@ body {
   transform: translateX(-50%);
 }
 
+.header {
+  color: white;
+}
+
+h1.header {
+  color: white;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 3.2em;
+}
+
 .header span {
-  max-width: 780px;
+  max-width: 850px;
   line-height: 1.3em;
   display: inline-block;
   font-family: sans-serif;
@@ -55,7 +71,11 @@ body {
   margin-top: 80px;
 }
 
-
+.forminput {
+  width: 400px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
 
 
 /* Tick-Animation */
