@@ -20,6 +20,11 @@ body, html{
 .text {
   color: white !important;
 }
+
+.text-uppercase {
+  color: black !important;
+}
+
 /* NEWSLETTER SIGNUP */
 .callToAction  a{
   background: #91c11e;
@@ -29,6 +34,11 @@ body, html{
 .callToAction  a:hover{
   background: #79a119;
   color: white;
+}
+
+.graphic-main-stage  img {
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 
