@@ -271,7 +271,7 @@ FEATURES - (Icons with Headline and Subheadline)
     <div class="mb-96"></div>
     <div class="col-xs-12 center callToAction">
       <div class="row">
-        <a href="try.html?product=03_roots" type="button" class="btn btn-default btn-lg">Try it out!</a>
+        <a href="try.html?product=03_roots" type="button" class="btn btn-default btn-lg" id="tryButton">Try it out!</a>
       </div>
     </div>
     <div class="mb-96"></div>
@@ -292,6 +292,7 @@ FEATURES - (Icons with Headline and Subheadline)
     jQuery(function () {
       jQuery.scrollDepth();
     });
+    $('#tryButton').attr('href', 'try.html?product=03_roots'+'&'+window.location.search.replace('?', ''))
   </script>
   <script src="assets/js/logging.js"></script>
 
