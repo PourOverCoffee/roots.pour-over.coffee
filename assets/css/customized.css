@@ -11,13 +11,22 @@ body, html{
   background-color: white !important;
 }
 
+.dark {
+  background-color: #808080;
+  color: white !important;
+}
+
+/* @ override */
+.text {
+  color: white !important;
+}
 /* NEWSLETTER SIGNUP */
-.callToAction > a{
+.callToAction  a{
   background: #91c11e;
   color: white;
 }
 
-.callToAction > a:hover{
+.callToAction  a:hover{
   background: #79a119;
   color: white;
 }
