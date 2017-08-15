@@ -3,8 +3,30 @@
   background-color: white;
 }
 
-/* NEWSLETTER SIGNUP */
+.center {
+  text-align: center;
+}
 
+body, html{
+  background-color: white !important;
+}
+
+/* NEWSLETTER SIGNUP */
+.callToAction > a{
+  background: #91c11e;
+  color: white;
+}
+
+.callToAction > a:hover{
+  background: #79a119;
+  color: white;
+}
+
+
+div.emotional {
+  color: black;
+  background: white;
+}
 
 /* IMPRESSUM */
 .footer {
